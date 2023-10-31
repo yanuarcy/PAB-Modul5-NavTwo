@@ -18,7 +18,7 @@ const NewsDetail = () => {
         </Box>
         {/* <Heading>News Detail</Heading> */}
         <Box padding={"$4"}>
-          <Text textAlign="left" fontSize={"$sm"} my={"$2"}>{params.date}</Text>
+          <Text textAlign="left" fontSize={"$sm"} my={"$3"}>{params.date}</Text>
 
           <Text textAlign="left"fontWeight="$900" fontSize={22} my={"$2"}>{params.title}</Text>
           <Divider />
