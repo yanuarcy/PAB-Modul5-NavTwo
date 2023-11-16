@@ -1,7 +1,12 @@
 {
   "expo": {
+<<<<<<< HEAD
     "name": "nav-two",
     "slug": "nav-two",
+=======
+    "name": "Modul5-NavTwo",
+    "slug": "Modul5-NavTwo",
+>>>>>>> 704998b59647ff4ca394c517bf37797c5b64b70f
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -10,7 +15,10 @@
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
+<<<<<<< HEAD
       
+=======
+>>>>>>> 704998b59647ff4ca394c517bf37797c5b64b70f
     },
     "assetBundlePatterns": [
       "**/*"
@@ -30,6 +38,11 @@
     "plugins": [
       "expo-router"
     ],
+<<<<<<< HEAD
     "scheme" : "my-scheme"
+=======
+    "scheme": "my-scheme"
+    
+>>>>>>> 704998b59647ff4ca394c517bf37797c5b64b70f
   }
 }

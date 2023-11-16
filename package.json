@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "nav-two",
+=======
+  "name": "modul5-navtwo",
+>>>>>>> 704998b59647ff4ca394c517bf37797c5b64b70f
   "version": "1.0.0",
   "main": "expo-router/entry",
   "scripts": {
@@ -9,6 +13,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@gluestack-style/legend-motion-animation-driver": "^1.0.2",
     "@gluestack-style/react": "^1.0.8",
     "@gluestack-ui/config": "^1.0.3",
@@ -16,6 +21,8 @@
     "@react-native-aria/focus": "^0.2.9",
     "@react-native-aria/interactions": "^0.2.11",
     "@react-native-aria/overlays": "^0.3.10",
+=======
+>>>>>>> 704998b59647ff4ca394c517bf37797c5b64b70f
     "expo": "~49.0.15",
     "expo-status-bar": "~1.6.0",
     "react": "18.2.0",

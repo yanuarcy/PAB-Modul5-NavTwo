@@ -6,6 +6,7 @@ import { TouchableOpacity } from "react-native";
 import { useNavigation } from "expo-router";
 
 const Header = ({ title, withBack = false, withClose = false }) => {
+
   const trueGray900 = "#171717";
   const navigation = useNavigation();
   return (
