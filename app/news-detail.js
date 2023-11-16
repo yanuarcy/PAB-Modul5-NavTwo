@@ -1,28 +1,51 @@
-import { Heading, Text, Center, Box, Image, ScrollView } from "@gluestack-ui/themed";
+import {
+  Box,
+  Heading,
+  Text,
+  Image,
+  Divider,
+  ScrollView,
+  Button,
+  ButtonText,
+} from "@gluestack-ui/themed";
 import { Header } from "../components";
-import { useLocalSearchParams } from "expo-router";
+import { Link, useLocalSearchParams } from "expo-router";
+import { format } from "date-fns";
 
 const NewsDetail = () => {
   const params = useLocalSearchParams();
   return (
-    <ScrollView>
+    <>
       <Header title={"News"} withBack={true} />
-      <Center flex={1} padding={"$4"}>
-        <Box>
-          <Image
-            source={{ uri: params.image }}
-            w="$full"
-            h="$full"
-            alt="Image Data"
-          />
+      <ScrollView>
+        <Image
+          source={{ uri: params.image }}
+          w={"$full"}
+          h={"$48"}
+          alt="News Image"
+          role="img"
+        />
+        <Box p={"$4"}>
+          <Text mb={"$1"}>{format(new Date(params.date), "dd MMMM yyyy")}</Text>
+          <Heading lineHeight={"$xl"} fontSize={"$2xl"}>
+            {params.title}
+          </Heading>
+          <Divider my={"$4"} />
+          <Text marginBottom={"$4"}>{params.desc}</Text>
+          <Link
+            href={{
+              pathname: "/web",
+              params: { link: params.link },
+            }}
+            asChild
+          >
+            <Button backgroundColor="$red700" borderRadius={"$full"}>
+              <ButtonText>Read More</ButtonText>
+            </Button>
+          </Link>
         </Box>
-        {/* <Heading>News Detail</Heading> */}
-        <Text textAlign="left" style={{fontSize: 18}}>{params.date}</Text>
-
-        <Text textAlign="left" style={{fontWeight: 900, fontSize: 22}}>{params.title}</Text>
-        <Text textAlign="left">{params.content}</Text>
-      </Center>
-    </ScrollView>
+      </ScrollView>
+    </>
   );
 };
 
